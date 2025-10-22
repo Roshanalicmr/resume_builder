@@ -11,7 +11,7 @@ const server = jsonServer.create()
 const middleware = jsonServer.defaults()
 
 // setup routes
-const route = jsonServer.router(db.json)
+const route = jsonServer.router('db.json')
 
 // implementing use
 server.use(cors())
